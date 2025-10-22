@@ -1,0 +1,21 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI Toolkit/Styles/PC_Style.uss" />
+
+    <!-- Root app column: Desktop (fills) + Taskbar (sticks to bottom) -->
+    <ui:VisualElement name="APP" class="App">
+        <!-- Optional top tabs bar (if you want it) -->
+        <ui:VisualElement name="AppTopBar" class="HeaderTabs" />
+
+        <!-- Desktop space (icons, windows, etc.) -->
+        <ui:VisualElement name="Desktop" class="Desktop" />
+
+        <!-- Taskbar -->
+        <ui:VisualElement name="Taskbar" class="Taskbar">
+            <ui:Button name="StartButton" class="StartButton" text="Start" />
+            <ui:VisualElement name="TaskList" class="TaskList" />
+            <ui:VisualElement name="Tray" class="Tray">
+                <ui:Label name="Clock" class="Clock" text="00:00" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
